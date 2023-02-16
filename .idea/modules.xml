@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.hanghaememo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.hanghaememo.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/hanghae-spring.hanghaememo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/hanghae-spring.hanghaememo.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/hanghaememo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/hanghaememo.main.iml" />
     </modules>

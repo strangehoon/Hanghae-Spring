@@ -11,7 +11,16 @@ spring:
       hibernate:
   # show_sql: true
         format_sql: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
 logging.level:
   org.hibernate.SQL: debug
 # org.hibernate.type: trace
+
+
+jwt:
+  secret:
+    key: 7ZWt7ZW0OTntmZTsnbTtjIXtlZzqta3snYTrhIjrqLjshLjqs4TroZzrgpjslYTqsIDsnpDtm4zrpa3tlZzqsJzrsJzsnpDrpbzrp4zrk6TslrTqsIDsnpA
 
