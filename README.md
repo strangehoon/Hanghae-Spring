@@ -1,12 +1,11 @@
-# 요구사항
+# 요구사항(~ 2주차)
 > 참고 : [블로그 만들기](https://teamsparta.notion.site/Spring-Lv-3-61227372735242bb903ea8c575e66a3f) </br> <br>
 
 # ERD
-<img src = "https://velog.velcdn.com/images/strangehoon/post/9334c02c-d005-45d0-a1de-9ac233f40063/image.png" height = "350px" width = "450px" allign = "left">
+<img src = "https://velog.velcdn.com/images/strangehoon/post/9334c02c-d005-45d0-a1de-9ac233f40063/image.png" height = "350px" width = "550px" allign = "left">
 
-**생각해볼 거리**
 
-* null or not null ?? </br>
+* Null or Not Null ?? </br>
 
   -> 모든 컬럼들이 다 필요해 보이지만 확장성 있게 설계하기 위해 대체로 널 값을 허용했다.
 
