@@ -28,11 +28,11 @@
                 data: {},
                 success: function (response) {
                     for (let i = 0; i < response.length; i++) {
-                        let message = response[i];
-                        let id = message['id'];
-                        let title = message['title'];
-                        let userName = message['userName'];
-                        let createdAt = message['createdAt'];
+                        let responseDto = response[i];
+                        let id = responseDto['id'];
+                        let title = responseDto['title'];
+                        let userName = responseDto['userName'];
+                        let createdAt = responseDto['createdAt'];
                         addHTML(id, title, userName, createdAt);
                     }
                 }
