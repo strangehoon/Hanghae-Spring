@@ -4,7 +4,6 @@ import fourth.dto.basic.ResponseDto;
 import fourth.dto.basic.ResponseMessage;
 import fourth.dto.basic.StatusCode;
 import fourth.exception.CustomException;
-import fourth.exception.ErrorCode;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -17,7 +16,7 @@ import fourth.repository.UserRepository;
 
 import java.util.Optional;
 
-import static fourth.exception.ErrorCode.*;
+import static fourth.exception.Error.*;
 
 @Service
 @RequiredArgsConstructor

@@ -6,9 +6,7 @@ import fourth.dto.basic.ResponseMessage;
 import fourth.dto.basic.StatusCode;
 import fourth.entity.LikeMemo;
 import fourth.exception.CustomException;
-import fourth.exception.ErrorCode;
 import fourth.repository.LikeMemoRepository;
-import io.jsonwebtoken.Claims;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -16,19 +14,16 @@ import org.springframework.transaction.annotation.Transactional;
 import fourth.dto.MemoDto;
 import fourth.entity.Memo;
 import fourth.entity.User;
-import fourth.entity.UserRoleEnum;
 
 import fourth.jwt.JwtUtil;
 import fourth.repository.MemoRepository;
 import fourth.repository.UserRepository;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
-import static fourth.exception.ErrorCode.*;
+import static fourth.exception.Error.*;
 
 @Service
 @RequiredArgsConstructor

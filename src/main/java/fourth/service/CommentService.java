@@ -5,9 +5,7 @@ import fourth.dto.basic.ResponseMessage;
 import fourth.dto.basic.StatusCode;
 import fourth.entity.*;
 import fourth.exception.CustomException;
-import fourth.exception.ErrorCode;
 import fourth.repository.*;
-import io.jsonwebtoken.Claims;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -17,10 +15,9 @@ import fourth.dto.CommentDto;
 
 import fourth.jwt.JwtUtil;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.Optional;
 
-import static fourth.exception.ErrorCode.*;
+import static fourth.exception.Error.*;
 
 @Service
 @RequiredArgsConstructor

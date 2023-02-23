@@ -6,7 +6,7 @@ import org.springframework.http.HttpStatus;
 
 @AllArgsConstructor
 @Getter
-public enum ErrorCode {
+public enum Error {
 
     // 400 BAD_REQUEST 잘못된 요청
     INVALID_PASSWORD(HttpStatus.BAD_REQUEST, "400", "비밀번호 오류"),

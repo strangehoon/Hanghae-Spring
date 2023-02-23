@@ -14,7 +14,4 @@ public interface MemoRepository extends JpaRepository<Memo, Long> {
 
     List<Memo> findAllByOrderByModifiedAtDesc();
 
-    @Query("select m " + "from Memo m join m.user u " + "where m.id = :memoId and u.id = :userId")
-    Optional<Memo> findByIdAndUserId(@Param("memoId")Long memoId, @Param("userId") Long userId);
-
 }
