@@ -2,14 +2,20 @@
 > 참고 : [블로그 만들기](https://teamsparta.notion.site/Spring-LV2-fe26a8e6040e44b2be912086e8cd832e) </br>
 
 # ERD
-<img src = "https://user-images.githubusercontent.com/117654450/220898558-ea0eec76-d046-4470-9733-6327f56d9819.png" height = "350px" width = "550px" allign = "left">
+<img src = "https://user-images.githubusercontent.com/117654450/220970739-365a079d-3520-4794-93ba-a96d0c7dc55d.png" height = "350px" width = "550px" allign = "left">
 
 
-* Null or Not Null ? </br>
+**Null or Not Null ?** </br>
 
-  -> 모든 컬럼들이 다 필요해 보이지만 확장성 있게 설계하기 위해 대체로 널 값을 허용했다. 예를 들어 user 테이블의 role은 어떻게 보면 not null이 되어야 한다고 생각할 수 있는데 특정 비즈니스 로직에서는 null이 허용될 수 있다. 따라서 db 테이블을 설계할 시 이러한 점을 유의해야한다. 
+ 모든 컬럼들이 다 필요해 보이지만 확장성 있게 설계하기 위해 대체로 널 값을 허용했다. 예를 들어 user 테이블의 role은 어떻게 보면 not null이 되어야 한다고 생각할 수 있는데 특정 비즈니스 로직에서는 null이 허용될 수 있다. 따라서 db 테이블을 설계할 시 이러한 점을 유의해야한다. 
 
-# 질문
+# Problem
+ 나는 DTO를 공통 DTO안에 넣어서 이를 다시 ResponseEntity의 body에 넣어 사용했다. 하지만 이는 지나치게 DTO를 감쌌으므로 좋은 코드가 아니다. 클라이언트에 공통 DTO를 반환하던가 DTO를 ResponseEntity에 넣어 반환하는 방식을 사용하도록 하자.  </br> </br> 
+> 아래 "기타"의 DTO 관리 참고
+
+
+
+# Q and A
 **1. 처음 설계한 API 명세서에 변경 사항이 있었나요?
   변경되었다면 어떤 점 때문일까요? 첫 설계의 중요성에 대해 작성해 주세요!**
 * 처음 설계한 API 명세서와 비교할 때 변경 사항은 없었다. 처음 설계할 때 신경을 많이 썼기 때문이다. </br> </br>
@@ -81,8 +87,7 @@ Swagger를 사용해 API 문서를 자동화 했다.   </br> <br>
 > 참고 : [스프링 네이밍 컨벤션](https://cocobi.tistory.com/27)
 
 
-
 ### DTO 관리
-* 지금까지는 정영호 매니저님께서 이전 세션에서 알려주신 `@ResponseBody`를 사용해서 DTO를 관리했는데 마지막 과제에서 ResponseEntity를 사용해서 DTO를 관리했다. 둘 다 기능상 다를 바 없으나 ResponseEntity가 Http 메세지를 조금 더 세밀하게 다룰 수 있다. 이번 과제를 진행하면서 DTO 관리법에 대해 공부할 수 있었고 이를 개인 블로그에 정리했다.
+지금까지는 정영호 매니저님께서 이전 세션에서 알려주신 `@ResponseBody`를 사용해서 DTO를 관리했는데 마지막 과제에서 ResponseEntity를 사용해서 DTO를 관리했다. 둘 다 기능상 다를 바 없으나 ResponseEntity가 Http 메세지를 조금 더 세밀하게 다룰 수 있다. 이번 과제를 진행하면서 DTO 관리법에 대해 공부할 수 있었고 이를 개인 블로그에 정리했다.
 > 블로그 포스팅 : [DTO 관리](https://velog.io/@strangehoon/%EA%B9%94%EA%B8%88%ED%95%98%EA%B2%8C-DTO-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0)
 
